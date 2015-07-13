@@ -58,6 +58,7 @@ app.delete('/articles/:article_id',function(req,res){
    }
  });
 });
+
 app.put('/articles/:article_id',function(req,res){
  article.findOne(req.params.article_id, function (err, article){
    article.title = req.body.title;
@@ -68,21 +69,6 @@ app.put('/articles/:article_id',function(req,res){
    res.json(article);
  });
 });
-
-// app.put('/articles:article_id', function(req,res){
-//   article.findById(req.params.article_id, function(err, article) {
-//     article.title = req.body.title;
-//     article.blog = req.body.blog;
-//     console.log(article.title = req.body.title); //it works but doesn't save
-//     console.log("this is inside blog"+ article.blog);//works but doesn't save
-//     article.save(function(err) {
-//       if (err)
-//         res.send(err);
-//         res.json({ message: 'article updated!' });
-//     });
-//   });
-// });
-
 
 //view engine setup
 app.set('view engine', 'jade');
