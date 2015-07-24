@@ -2,16 +2,9 @@
 
 var article = require('../models/model.js');
 var bodyParser = require('body-parser');
-//var express = require('express');
-//var app = express();
 
 module.exports = function(app) {
   app.use(bodyParser.json());
-
-  // app.post('/articles', function(req,res){
-  //   console.log(req.body);
-  //   res.json(req.body);
-  // });
 
   app.get('/articles', function(req,res){
     article.find({},function(err,article) {
@@ -54,7 +47,8 @@ module.exports = function(app) {
   });
 
   app.put('/articles/:article_id',function(req,res){
-   article.findOne(req.params.article_id, function (err, article){
+    console.log(req.body);
+   article.findOne({_id : req.params.article_id} , function (err, article){
      article.title = req.body.title;
      article.blog = req.body.blog;
      article.save();
