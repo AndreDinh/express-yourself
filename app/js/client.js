@@ -10,4 +10,7 @@ var blogPosting = angular.module('blogPosting', []);
 require("./BlogPost/Controllers/postingController.js")(blogPosting);
 
 // services
-require('./services/resourceServices.js')(blogPosting);
+// require('./services/resourceServices.js')(blogPosting);
+
+//directives
+require('./directives/newPostDirective.js')(blogPosting);
