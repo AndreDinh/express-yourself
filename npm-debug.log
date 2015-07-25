@@ -1,28 +1,87 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/Users/AndreDinh/.node/bin/node',
 1 verbose cli   '/Users/AndreDinh/.node/bin/npm',
-1 verbose cli   'start' ]
+1 verbose cli   'install',
+1 verbose cli   'ngAnimate',
+1 verbose cli   '--save' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart express-yourself@0.1.0
-6 info start express-yourself@0.1.0
-7 verbose unsafe-perm in lifecycle true
-8 info express-yourself@0.1.0 Failed to exec start script
-9 error express-yourself@0.1.0 start: `node server.js`
-9 error Exit status 8
-10 error Failed at the express-yourself@0.1.0 start script.
-10 error This is most likely a problem with the express-yourself package,
-10 error not with npm itself.
-10 error Tell the author that this fails on your system:
-10 error     node server.js
-10 error You can get their info via:
-10 error     npm owner ls express-yourself
-10 error There is likely additional logging output above.
-11 error System Darwin 14.1.1
-12 error command "/Users/AndreDinh/.node/bin/node" "/Users/AndreDinh/.node/bin/npm" "start"
-13 error cwd /Users/AndreDinh/Documents/FrontendClass/express-yourself
-14 error node -v v0.10.35
-15 error npm -v 1.4.28
-16 error code ELIFECYCLE
-17 verbose exit [ 1, true ]
+4 warn package.json express-yourself@0.1.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'ngAnimate', null ]
+7 verbose cache add name=undefined spec="ngAnimate" args=["ngAnimate",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'ngAnimate',
+8 verbose parsed url   path: 'ngAnimate',
+8 verbose parsed url   href: 'ngAnimate' }
+9 silly lockFile 1759ddfb-ngAnimate ngAnimate
+10 verbose lock ngAnimate /Users/AndreDinh/.npm/1759ddfb-ngAnimate.lock
+11 silly lockFile 1759ddfb-ngAnimate ngAnimate
+12 silly lockFile 1759ddfb-ngAnimate ngAnimate
+13 verbose addNamed [ 'ngAnimate', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 1d5e21ce-ngAnimate ngAnimate@
+16 verbose lock ngAnimate@ /Users/AndreDinh/.npm/1d5e21ce-ngAnimate.lock
+17 silly addNameRange { name: 'ngAnimate', range: '*', hasData: false }
+18 verbose request where is /ngAnimate
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id c7c588536e2a16bb
+21 verbose url raw /ngAnimate
+22 verbose url resolving [ 'https://registry.npmjs.org/', './ngAnimate' ]
+23 verbose url resolved https://registry.npmjs.org/ngAnimate
+24 verbose request where is https://registry.npmjs.org/ngAnimate
+25 info trying registry request attempt 1 at 14:10:50
+26 http GET https://registry.npmjs.org/ngAnimate
+27 http 404 https://registry.npmjs.org/ngAnimate
+28 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 verbose headers   'content-type': 'application/json',
+28 verbose headers   'cache-control': 'max-age=0',
+28 verbose headers   'content-length': '51',
+28 verbose headers   'accept-ranges': 'bytes',
+28 verbose headers   date: 'Fri, 24 Jul 2015 21:10:51 GMT',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   age: '0',
+28 verbose headers   connection: 'keep-alive',
+28 verbose headers   'x-served-by': 'cache-lax1425-LAX',
+28 verbose headers   'x-cache': 'MISS',
+28 verbose headers   'x-cache-hits': '0',
+28 verbose headers   'x-timer': 'S1437772251.211687,VS0,VE85' }
+29 silly registry.get cb [ 404,
+29 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 silly registry.get     'content-type': 'application/json',
+29 silly registry.get     'cache-control': 'max-age=0',
+29 silly registry.get     'content-length': '51',
+29 silly registry.get     'accept-ranges': 'bytes',
+29 silly registry.get     date: 'Fri, 24 Jul 2015 21:10:51 GMT',
+29 silly registry.get     via: '1.1 varnish',
+29 silly registry.get     age: '0',
+29 silly registry.get     connection: 'keep-alive',
+29 silly registry.get     'x-served-by': 'cache-lax1425-LAX',
+29 silly registry.get     'x-cache': 'MISS',
+29 silly registry.get     'x-cache-hits': '0',
+29 silly registry.get     'x-timer': 'S1437772251.211687,VS0,VE85' } ]
+30 silly lockFile 1d5e21ce-ngAnimate ngAnimate@
+31 silly lockFile 1d5e21ce-ngAnimate ngAnimate@
+32 error 404 404 Not Found: ngAnimate
+32 error 404
+32 error 404 'ngAnimate' is not in the npm registry.
+32 error 404 You should bug the author to publish it
+32 error 404 It was specified as a dependency of 'express-yourself'
+32 error 404
+32 error 404 Note that you can also install from a
+32 error 404 tarball, folder, or http url, or git url.
+33 error System Darwin 14.1.1
+34 error command "/Users/AndreDinh/.node/bin/node" "/Users/AndreDinh/.node/bin/npm" "install" "ngAnimate" "--save"
+35 error cwd /Users/AndreDinh/Documents/FrontendClass/express-yourself
+36 error node -v v0.10.35
+37 error npm -v 1.4.28
+38 error code E404
+39 verbose exit [ 1, true ]

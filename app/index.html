@@ -8,7 +8,7 @@
     <header>
       <section><a><img src="http://i.imgur.com/u3lmGxb.png"></a><a>About Dexter</a><a>Courses Teaching</a><a>Projects</a><a>More</a></section>
     </header>
-    <main data-ng-controller="postingController">
+    <main data-ng-controller="postingController" data-ng-init="getAll()">
       <button class="btn-ok" data-ng-click="post.edit = true">New</button>
       <form data-ng-submit="newArticle(post)" data-ng-if="!post.editing">
         <label for="title">Title</label>
