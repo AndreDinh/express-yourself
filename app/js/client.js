@@ -1,7 +1,7 @@
 'user strict';
 
 require('angular/angular');
-// require('angular-route');
+require('angular-route/angular-route');
 
 var blogPosting = angular.module('blogPosting', ['ngRoute']);
 
@@ -15,15 +15,14 @@ require("./BlogPost/Controllers/postingController.js")(blogPosting);
 //directives
 require('./directives/newPostDirective.js')(blogPosting);
 
-module.exports = function(app) {
-	app.config(['$routeProvider', function($routeProvider) {
+
+	blogPosting.config(['$routeProvider', function($routeProvider) {
 		$routeProvider
 		.when('/newSubmit', {
-			templateUrl: '/templates/settings/directives/newSubmit.html',
+			templateUrl: '/templates/showData.html',
 			controller: 'postingController'
 		})
 		.otherwise({
 			redirectTo: '/'
 		});
 	}]);
-}

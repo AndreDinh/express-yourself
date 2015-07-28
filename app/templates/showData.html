@@ -1,4 +1,6 @@
-<section data-ng-repeat="post in posts">
+
+<section data-ng-controller="postingController" data-ng-init="getSettings()" data-ng-repeat="post in posts">
+  <button class="btn-ok" data-ng-click="post.edit = true">New</button>
 <div data-ng-if="post.editing">
   <lablel for='title'>Title
     <h1><input id="New_Title" type="text" data-ng-model="post.title"></h1>
